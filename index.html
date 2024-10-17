@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo or branding can go here -->
+    </header>
+
+    <!-- Mobile Menu Toggle Button -->
+    <div class="xs-menu-cont">
+        <!-- Button to toggle mobile menu visibility -->
+        <a id="menutoggle"><i class="fa fa-align-justify"></i></a>
+        
+        <!-- Hidden Mobile Menu (shown when toggle is clicked) -->
+        <nav class="xs-menu displaynone">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Adoption Services</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Pet Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="menu">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li class="drop-down">
+                <a href="#">Pet Products</a>
+
+                <!-- Mega Menu for Pet Products -->
+                <div class="mega-menu fadeIn animated">
+                    <!-- First Column: Popular Breeds with Image -->
+                    <div class="mm-6column">
+                        <span class="left-images">
+                            <img src="images/pets.webp" alt="Popular Breeds">
+                            <p>Most Popular Breeds</p>
+                        </span>
+
+                        <!-- Categories List -->
+                        <span class="categories-list">
+                            <ul>
+                                <span>Dogs</span>
+                                <li>Food & Treats</li>
+                                <li>Leashes & Collars</li>
+                                <li>Beds & Furniture</li>
+                                <li>Toys</li>
+                                <li>Grooming Supplies</li>
+                                <li>Training Equipment</li>
+                                <li>Health Supplements</li>
+                                <li><a class="mm-view-more" href="#">View more →</a></li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <!-- Second Column: Cats -->
+                    <div class="mm-3column">
+                        <span class="categories-list">
+                            <ul>
+                                <span>Cats</span>
+                                <li>Food & Treats</li>
+                                <li>Litter & Litter Boxes</li>
+                                <li>Scratching Posts</li>
+                                <li>Beds & Furniture</li>
+                                <li>Toys</li>
+                                <li>Grooming Supplies</li>
+                                <li>Health Supplements</li>
+                                <li><a class="mm-view-more" href="#">View more →</a></li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <!-- Third Column: Small Pets -->
+                    <div class="mm-3column">
+                        <span class="categories-list">
+                            <ul>
+                                <span>Small Pets</span>
+                                <li>Cages & Habitats</li>
+                                <li>Bedding & Litter</li>
+                                <li>Food & Treats</li>
+                                <li>Toys & Accessories</li>
+                                <li>Health Care</li>
+                                <li>Exercise Equipment</li>
+                                <li>Training Supplies</li>
+                                <li><a class="mm-view-more" href="#">View more →</a></li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#">Adoption Services</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Pet Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- jQuery and External JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

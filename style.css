@@ -1,0 +1,285 @@
+/* Global Settings */
+body {
+    font-family: 'Sintony', sans-serif;
+    color: #f5f5dc; /* Light yellow-beige text color */
+    font-size: 12px;
+    background: #9fd4ff; /* Dark brown background */
+    line-height: 1;
+}
+
+/* Universal Box-Sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Reset CSS by Eric Meyer (v2.0) */
+html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Header Styles */
+header h2 {
+    margin: 25px 10px;
+    font-size: 28px;
+    text-align: center;
+    color: #ffeb3b; /* Bright yellow text color */
+}
+
+/* Container */
+.container {
+    margin: 10px auto;
+    display: table;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.container:before, .container:after {
+    content: "";
+    clear: both;
+}
+
+/* Navigation Menu */
+nav.menu {
+    background: linear-gradient(90deg, #b22222, #f18408); /* Gradient from firebrick red to saddle brown */
+    position: relative;
+    min-height: 45px;
+    height: 100%;
+}
+
+.menu > ul > li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.menu > ul li a, .xs-menu li a {
+    text-decoration: none;
+    color: #ffffff; /* Gold text */
+    display: block;
+    padding: 0px 24px;
+}
+
+.menu > ul li a:hover {
+    background: #8b0000; /* Dark red background */
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.active {
+    background: #8b0000 !important;
+}
+
+.displaynone {
+    display: none;
+}
+
+/* Responsive Menu for Small Screens */
+.xs-menu-cont {
+    display: none;
+}
+
+.xs-menu-cont > a {
+    background: #d2691e; /* Chocolate background */
+    border-radius: 3px;
+    padding: 3px 6px;
+    display: block;
+    border-bottom: 1px solid #8b4513;
+    box-shadow: 0 1px 2px #8b4513;
+}
+
+.xs-menu-cont > a:hover {
+    cursor: pointer;
+}
+
+.xs-menu li {
+    color: #fff;
+    padding: 14px 30px;
+    border-bottom: 1px solid #ccc;
+    background: #9da52a; /* Brown background */
+}
+
+.xs-menu a {
+    text-decoration: none;
+}
+
+/* Mega Menu */
+.mega-menu {
+    background: #b22222; /* Firebrick background for mega menu */
+    left: 0;
+    margin-top: 3px;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    display: none;
+    transition-duration: 0.9s;
+}
+
+/* Toggle Icon */
+#menutoggle i {
+    color: #fff;
+    font-size: 33px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Column Layout */
+.mm-6column, .mm-3column {
+    float: left;
+    position: relative;
+}
+
+.mm-6column {
+    width: 50%;
+}
+
+.mm-3column {
+    width: 25%;
+}
+
+/* Responsive Images */
+.responsive-img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Left Aligned Images and Lists */
+.left-images {
+    margin-right: 25px;
+    float: left;
+}
+
+.left-categories-list {
+    float: left;
+}
+
+.categories-list li {
+    display: block;
+    line-height: normal;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.categories-list li:hover {
+    background: inherit !important;
+}
+
+/* Left Images Section */
+.left-images > p {
+    background: #a52a2a; /* Brown background */
+    display: block;
+    font-size: 18px;
+    line-height: normal;
+    margin: 0;
+    padding: 5px 14px;
+}
+
+.categories-list span {
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* View More Button */
+.mm-view-more {
+    background: #a52a2a; /* Brown background */
+    color: #fff;
+    display: inline !important;
+    line-height: normal;
+    padding: 5px 8px !important;
+    margin-top: 10px;
+}
+
+.display-on {
+    display: block;
+    transition-duration: 0.9s;
+}
+
+/* Dropdown Arrow */
+.drop-down > a:after {
+    content: "\f107"; /* Downward arrow icon */
+    font-family: "FontAwesome";
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .xs-menu li a {
+        padding: 0px;
+    }
+
+    .xs-menu-cont {
+        display: block;
+    }
+}
+
+/* Animations */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
